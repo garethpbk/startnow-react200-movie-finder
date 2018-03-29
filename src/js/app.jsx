@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { HashRouter as Router, Route } from 'react-router-dom';
 
-import MovieDetailContainer from './containers/MovieDetailContainer';
-
-import MovieSearchView from './components/MovieSearch/MovieSearchView';
+import MovieSearchView from './components/MovieSearch';
+import MovieDetailView from './components/MovieDetail';
 
 export default class App extends Component {
   render() {
@@ -11,7 +10,7 @@ export default class App extends Component {
       <Router>
         <div className="container">
           <Route exact path="/" component={MovieSearchView} />
-          <Route path="/movie/:id" component={MovieDetailContainer} />
+          <Route path="/movie/:id" component={MovieDetailView} />
         </div>
       </Router>
     );
