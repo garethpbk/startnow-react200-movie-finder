@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const API_KEY = '8730e0e';
-const ROOT_URL = 'http://omdbapi.com/?t=';
+const ROOT_URL = 'https://omdbapi.com/?t=';
 
 export function enterTerm(term) {
   return {
